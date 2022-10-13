@@ -52,7 +52,7 @@ function Home() {
 
 
     return (
-        <div className="homepage">
+        <div className="homepage" style={{backgroundColor: `rgba(100, 190, 0, ${cloudiness / 100})`}}>
             <h1>Weather App</h1>
             <Header/>
             <WeatherCard 
