@@ -4,6 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import { WEATHER_APP_API_KEY } from "../API_KEYS";
 import WeatherCard from '../components/WeatherCard.js';
 import Header from '../components/Header.js'
+import '../App.css';
  
 function Home() {
     const [weatherData, setWeatherData] = useState({});
@@ -24,7 +25,7 @@ function Home() {
             `https://api.openweathermap.org/data/2.5/weather?q=${cityToQuery}&appid=${WEATHER_APP_API_KEY}&units=imperial`
         )
         .then(function (response) {
-            console.log(searchParams);
+            //console.log(searchParams);
             //console.log(response.data);
             setWeatherData(response.data);
         })
@@ -51,7 +52,7 @@ function Home() {
 
 
     return (
-        <div>
+        <div className="homepage">
             <h1>Weather App</h1>
             <Header/>
             <WeatherCard 

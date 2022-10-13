@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header(){
     return(
-        <div>
+        <div className="city-navbar">
             <a href="/?city=Seoul">Seoul</a>
             <a href="/?city=Chicago">Chicago</a>
             <a href="/?city=Orlando">Orlando</a>

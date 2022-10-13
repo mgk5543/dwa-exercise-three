@@ -3,12 +3,12 @@ import React from 'react';
 function WeatherCard({city, weatherType, currentTemp, highTemp, lowTemp, cloudiness, humidity, windSpeed}) {
     return (
         <div className="weatherCard">
-            <h2>{city}</h2>
+            <h2 className="city">{city}</h2>
+            <p>{currentTemp}</p>
             <div className="weatherCard--stats">
-                <div>
-                    <div>
+                <div className="weatherCard--wrapper">
+                    <div className="type">
                         <p>{weatherType}</p>
-                        <p>Currently {currentTemp}</p>
                     </div>
                     <div>
                         <p> High: <strong>{highTemp}&deg;</strong>

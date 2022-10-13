@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+h1{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 45px;
+    margin: 20px;
+}
+.homepage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherCard{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.weatherCard--stats{
+    flex-direction: row;
+    display: flex;
+}
+
+.weatherCard--stats > div {
+    margin-right: 40px;
+}
+h2{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 45px;
+    margin: 0;
+}
+p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.weatherCard > p{
+    font-size: 40px;
+    margin: 0;
+}
+
+.city-navbar {
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+.city-navbar a{
+    border-radius: 5px;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+.city-navbar a:hover{
+    background-color: black;
+    color: white;
+}
