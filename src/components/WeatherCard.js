@@ -7,11 +7,9 @@ function WeatherCard({city, weatherType, currentTemp, highTemp, lowTemp, cloudin
         <div className="weatherCard">
             <div className="weatherCard--main">
                 <h2 className="city">{city}</h2>
-                <div className="weatherCard--temp">
-                    <p>{currentTemp}&deg;</p>
-                    <WeatherIcon className="weatherCard--icon" weatherType={weatherType}/>
-                </div>
-                <p>{weatherType}</p>
+                <p className="weatherCard--temp">{currentTemp}&deg;</p>
+                <p className="weatherCard--type">{weatherType}</p>
+                <WeatherIcon className="weatherCard--icon" weatherType={weatherType}/>
             </div>
             <div className="weatherCard--stats">
                 <div className="weatherCard--wrapper">

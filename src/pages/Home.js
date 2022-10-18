@@ -39,9 +39,9 @@ function Home() {
         const weatherMain = weatherData.main || {};
         return {
             weatherType: weatherData.weather && weatherData.weather[0].main, //does same thing as const weatherMain
-            currentTemp: weatherMain.feels_like,
-            highTemp: weatherMain.temp_max,
-            lowTemp: weatherMain.temp_min,
+            currentTemp: Math.round(weatherMain.feels_like),
+            highTemp: Math.round(weatherMain.temp_max),
+            lowTemp: Math.round(weatherMain.temp_min),
             cloudiness: weatherData.clouds && weatherData.clouds.all, //does same thing as const weatherMain
             humidity: weatherMain.humidity,
             windSpeed: weatherData.wind && weatherData.wind.speed,
@@ -52,7 +52,7 @@ function Home() {
 
 
     return (
-        <div className="homepage" style={{backgroundColor: `rgba(100, 190, 0, ${cloudiness / 100})`}}>
+        <div className="homepage" style={{backgroundColor: `rgba(118, 114, 186, ${cloudiness / 100})`}}>
             <h1>Weather App</h1>
             <Header/>
             <WeatherCard 

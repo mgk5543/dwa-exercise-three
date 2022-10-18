@@ -7,7 +7,8 @@ function Header(){
             <a href="/?city=Chicago">Chicago</a>
             <a href="/?city=Orlando">Orlando</a>
             <a href="/?city=Bogota">Bogota</a>
-            <a href="/?city=Tokyo   ">Tokyo</a>
+            <a href="/?city=Tokyo">Tokyo</a>
+            <a href="/?city=New York">New York</a>
         </div>
     );
 }
